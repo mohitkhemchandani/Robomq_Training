@@ -16,6 +16,57 @@ public class Book {
 			this.quantity = quantity;
 		}
 		
+		
+		public String getMemName() {
+			return memName;
+		}
+
+
+		public void setMemName(String memName) {
+			this.memName = memName;
+		}
+
+
+		public int getMemId() {
+			return memId;
+		}
+
+
+		public void setMemId(int memId) {
+			this.memId = memId;
+		}
+
+
+		public String getAuthor() {
+			return author;
+		}
+
+
+		public void setAuthor(String author) {
+			this.author = author;
+		}
+
+
+		public String getPublisher() {
+			return publisher;
+		}
+
+
+		public void setPublisher(String publisher) {
+			this.publisher = publisher;
+		}
+
+
+		public int getQuantity() {
+			return quantity;
+		}
+
+
+		public void setQuantity(int quantity) {
+			this.quantity = quantity;
+		}
+
+
 		@Override
 		public String toString() {
 			return "Book [memName=" + memName + ", memId=" + memId + ", author=" + author + ", publisher=" + publisher
