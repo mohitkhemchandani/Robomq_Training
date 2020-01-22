@@ -70,7 +70,7 @@ public class Book {
 		@Override
 		public String toString() {
 			return "Book [memName=" + memName + ", memId=" + memId + ", author=" + author + ", publisher=" + publisher
-					+ ", quantity=" + quantity + "]";
+					+ ", quantity=" + quantity + "\n]";
 		}
 		
 		
