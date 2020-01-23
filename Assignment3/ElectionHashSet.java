@@ -16,7 +16,7 @@ public class ElectionHashSet {
 		//System.out.println(parties);
 			//Set<String>set = new HashSet<String>();
 			for (Elections s:parties) {
-				if(s.getElectiondate().equals(getElectiondate()))
+				if(s.getElectiondate().equals(s.getElectiondate()))
 				System.out.println(s);
 		}
 }
