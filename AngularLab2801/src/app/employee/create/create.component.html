@@ -1,0 +1,22 @@
+<h1>Enter Employee Details</h1>
+<table border="1">
+  <tr>
+    <td>Id</td>
+    <td><input matInput type="text" [(ngModel)]="enteredId"></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td><input matInput type="text" [(ngModel)]="enteredName"></td>
+  </tr>
+  <tr>
+    <td>Salary</td>
+    <td><input matInput type="text" [(ngModel)]="enteredSalary"></td>
+  </tr>
+  <tr>
+    <td>Dept</td>
+    <td><input matInput type="text" [(ngModel)]="enteredDept"></td>
+  </tr>
+</table>
+  <button
+    (click)="onAddEmp()">Save Details</button>
+

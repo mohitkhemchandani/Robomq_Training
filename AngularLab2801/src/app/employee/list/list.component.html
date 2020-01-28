@@ -1,0 +1,24 @@
+<table border="1">
+  <tr>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Salary</th>
+  <th>Department</th>
+  <th>Action</th>
+  </tr>
+  <tr  *ngFor="let emp of emps">
+    <td>
+      {{ emp.id }}
+    </td>
+    <td>
+    {{ emp.name }}
+    </td>
+    <td>
+      {{ emp.salary }}
+    </td>
+    <td>
+      {{ emp.dept }}
+    </td>
+    <td><button>Update</button>|<button >Delete</button></td>
+  </tr >
+</table>
