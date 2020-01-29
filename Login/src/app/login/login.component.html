@@ -1,0 +1,16 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <table>
+    <tr>
+      <th>Username</th>
+      <td><input  placeholder="Enter username" formControlName="email"></td>
+      <span *ngIf="loginForm.controls.email.errors?.required"> Username is required</span>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td><input placeholder="Enter Password" formControlName="password"></td>
+      <span *ngIf="loginForm.controls.password.errors?.required"> Password is required</span>
+
+    </tr>
+  </table>
+  <button type="submit">Login</button>
+</form>

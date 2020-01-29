@@ -1,0 +1,29 @@
+<div>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+  <input type="text" placeholder="Enter your ID" formControlName="id" required>
+  <span *ngIf="addForm.controls.id.errors?.required">ID is required</span>
+  <br>
+  <input type="text" placeholder="Enter your Name" [pattern]="username" formControlName="name" required>
+  <span *ngIf="addForm.controls.name.errors?.required">Name is required</span>
+  <span *ngIf="addForm.controls.name.errors?.pattern">Name should contains only characters.</span>
+  <br>
+  <input type="text" placeholder="Enter Email ID" [pattern]="emailPattern" formControlName="email" required>
+  <span *ngIf="addForm.controls.email.errors?.required">Email is required</span>
+  <span *ngIf="addForm.controls.email.errors?.pattern">Email is not valid.</span>
+  <br>
+  <input type="password" placeholder="Enter your Password" [pattern]="pwdpattern" formControlName="password" required>
+  <span *ngIf="addForm.controls.password.errors?.required">Password is required</span>
+  <span *ngIf="addForm.controls.password.errors?.pattern"> Password should contains
+    one number, one uppercase, special character and min. 8 length.</span>
+
+  <br>
+  <input type="number" placeholder="Enter your Mobile Number" [pattern]="mobnumPattern" formControlName="mobile" required>
+  <span *ngIf="addForm.controls.mobile.errors?.required">Mobile is required</span>
+  <span *ngIf="addForm.controls.mobile.errors?.pattern">Mobile number not valid.</span>
+
+  <br>
+
+  <button type="submit">Register </button>
+  </form>
+ </div>
